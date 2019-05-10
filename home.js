@@ -9,7 +9,11 @@ function handleAuthChanges() {
 }
 
 function signOut() {
-  
+firebase.auth().signOut().then(function(){
+	
+}).catch(function(err){
+	console.log(err.code)
+})
 }
 
 window.onload = function () {
